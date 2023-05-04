@@ -1,0 +1,41 @@
+:root {
+    --color-primary: #101010;
+    --color-secondary: #838383;
+    --color-golden: #FFA542;
+    --color-background: #EAEAEA;
+    --color-white: #FFFF;
+    --color-name: #1C1C27;
+
+    --color-plus-minus-round: #FFCE7F;
+    --color-cart-price: #AAAAAA;
+}
+
+.logo {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.round {
+    cursor: pointer;
+    width: 35px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: var(--color-plus-minus-round);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__line {
+        width: 16px;
+        height: 2px;
+        background-color: var(--color-white);
+    }
+}
+
+.svg {
+    cursor: pointer;
+}

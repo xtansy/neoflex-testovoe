@@ -1,0 +1,12 @@
+.plus {
+    position: relative;
+
+    &__line {
+        &_one {}
+
+        &_two {
+            position: absolute;
+            transform: rotate(90deg);
+        }
+    }
+}

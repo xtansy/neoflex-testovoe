@@ -1,0 +1,73 @@
+.headphone-cart {
+    width: 100%;
+    max-width: 633px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 18px;
+    padding-right: 28px;
+
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    background-color: var(--color-white);
+
+    &__content {
+        margin-bottom: 17px;
+        display: flex;
+        justify-content: space-between;
+
+        &-info {
+            display: flex;
+            align-items: center;
+            gap: 23px;
+            min-width: 311px;
+
+            img {
+                width: 146.53px;
+                height: 136px;
+            }
+
+            &__text {
+                h2 {
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 21px;
+                    color: var(--color-name);
+                }
+
+                p {
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: var(--color-cart-price);
+                }
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+
+        &-count {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 125px;
+
+            p {
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 21px;
+            }
+        }
+
+        &-price {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: right;
+            color: var(--color-name);
+        }
+    }
+}

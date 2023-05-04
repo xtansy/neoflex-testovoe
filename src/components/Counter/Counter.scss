@@ -1,0 +1,13 @@
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 125px;
+
+    p {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 21px;
+    }
+}
