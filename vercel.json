@@ -1,0 +1,32 @@
+{
+    "version": 2,
+    "routes": [
+        {
+            "src": "*",
+            "methods": [
+                "GET",
+                "POST",
+                "PUT",
+                "DELETE"
+            ],
+            "dest": "json-server --watch db.json --port $PORT"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
+    ],
+    "env": {
+        "PORT": 3001
+    },
+    "builds": [
+        {
+            "src": "vite.config.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "public/**",
+            "use": "@vercel/static"
+        }
+    ]
+}
