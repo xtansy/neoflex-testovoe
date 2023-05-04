@@ -9,7 +9,6 @@ import { ROUTES } from "@utils";
 
 const App = () => {
 	const dispatch = useAppDispatch();
-
 	useEffect(() => {
 		dispatch(fetchHeadphones());
 	}, [])
