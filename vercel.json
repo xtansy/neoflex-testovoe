@@ -2,18 +2,18 @@
     "version": 2,
     "builds": [
         {
-            "src": "src/index.html",
-            "use": "@vercel/static"
+            "src": "vite.config.js",
+            "use": "@vercel/static-build"
+        },
+        {
+            "src": "json-server --watch src/db.json --port=3001",
+            "use": "@vercel/node"
         }
     ],
     "routes": [
         {
-            "src": "/api/.*",
-            "dest": "http://localhost:3001"
-        },
-        {
             "src": "/(.*)",
-            "dest": "src/index.html"
+            "dest": "index.html"
         }
     ]
 }
