@@ -16,7 +16,7 @@ const initialState: HeadphonesSlice = {
 
 
 export const fetchHeadphones = createAsyncThunk("headphones/fetchHeadphones", async () => {
-    const { data } = await getHeadphones();
+    const data = getHeadphones();
     return data;
 })
 

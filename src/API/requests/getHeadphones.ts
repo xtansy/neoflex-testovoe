@@ -1,5 +1,6 @@
-import api from "../instance";
+import { DB } from "../../db";
 
 export const getHeadphones = () => {
-    return api.get<Headphones>("/headphones")
+    // simulating a request to the server
+    return Promise.resolve(DB);
 }
